@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>DL: LogIn</title>
+
+    <style>
+        body{
+            background-color: #FEFBE9;
+            }
+        .vertical-center {
+            min-height:100%;
+            max-height:100vh;
+            display:flex;
+            }
+        .jumbotron{
+            background-color: #E1EEDD;
+            }
+        .nav-link{
+            color: #183A1D;
+            text-decoration: none;
+            }
+        .head {
+            margin-left:10px;
+            margin-top:30px;
+            display:inline-block;
+            color: #F6C453;
+            font-family: "Dosis", sans-serif;
+            }
+        .account {
+            padding-top:40px;
+            }
+        .navbar {
+            margin-top:-60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .breadcrumb {
+            background-color: #FEFBE9;
+            }
+        .breadcrumb >.active {
+            color: #183A1D;
+            }
+        .head2 {
+            margin-top:10px;
+            color: #183A1D;
+            font-family: "Dosis", sans-serif;
+            }
+        p {
+            color: #183A1D;
+            }
+        .descr {
+            margin-left:30px;
+            margin-right:30px;
+            }
+        .col {
+            margin:20px;
+            }
+        .creator {
+            margin-left:10px;
+            display:inline-block;
+            }
+        .footer {
+            background-color: #E1EEDD;;
+            background-size:100%;
+            color: #183A1D;
+            }
+        .container.custom-container {
+            padding: 20px 330px;
+            }
+        .btn-primary{
+            background-color: #183A1D;
+            border-color: #183A1D;
+            color: #FEFBE9;
+            margin-left:30%;
+            margin-top: 5px
+            }
+        .btn-primary:hover{
+            background-color: #183A1D;
+            border-color: #F0a04b;
+            border-width: 2px;
+            color: #FEFBE9;
+            }
+    </style>
+</head>
+
+<body>
+
+<div class="jumbotron vertical-center" >
+    <div class="container">
+
+        <img src="Media/placeholder.jpg" width="20%" class="img rounded img-fluid float-left" alt="Dig Log Learner Logo">
+        <h1 class="head">Digital Logic Learning</h1>
+
+        <ul class="account nav float-right">
+            <form class="form-inline">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="LogIn.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Account.html"><img src="Media/squareplaceholder.jpg" width="45px" height="45px" class="rounded-circle"></a>
+                </li></form>
+        </ul>
+    </div>
+</div>
+
+<div class="navbar">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="Home.html" style="border-bottom-color: #F6C453">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Learning.hmtl" style="border-bottom-color: #F6C453">Learning</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="CircuitsChallenges.html" style="border-bottom-color: #F6C453">Circuits Challenges</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="CircuitsFreeStyle.html" style="border-bottom-color: #F6C453"> Circuits FreeStyle</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="EquationsChallenges.html" style="border-bottom-color: #F6C453"> Equation Challenges</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Log In</li>
+        </ol>
+    </nav>
+
+    <h2 class="head2">Log In to Your Account</h2>
+</div>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-4">
+            <p>First Name:</p>
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" style="width: 100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p>Last Name:</p>
+        </div>
+        <div class="col-6">
+            <input type="text" class="form-control" style="width: 100%">
+        </div>
+    </div>
+    <div class="col-4"></div>
+    <div class="col"><a href="Home.html" class="btn btn-primary">Log In</a></div>
+    <div class="col-4"> </div>
+    <div class="col"><p>Don't have an account yet? </p><a href="Register.html">Register</a></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="creator col">
+                <form class="form-inline">
+                    <img src="Media/squareplaceholder.jpg" width="30px" height="30px" class="rounded-circle float-left">
+                    <h6 class="creator"><u>Creator</u></h6>
+                    <ul>
+                        <li>Jane Smith</li>
+                        <li>Master of the Universe</li>
+                        <li>From Mars</li>
+                        <li>Knows what you did last summer</li>
+                    </ul>
+                </form>
+            </div>
+            <div class="contact col">
+                <h6><u>Contact</u></h6>
+                <ul>
+                    <li>Jane Smith</li>
+                    <li>janesmith@example.com</li>
+                    <li>Tel. 123456789</li>
+                    <li>42 Universe Street, City of Everything</li>
+                </ul>
+            </div>
+            <div class="help col">
+                <a data-toggle="modal" data-target="#myModal"><h6><u>Help</u></h6></a>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Help</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This link will lead to a help page, with advice, troubleshooting and FAQs.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

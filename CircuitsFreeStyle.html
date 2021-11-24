@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>DL:FreeStyle</title>
+
+    <style>
+        body{
+            background-color: #FEFBE9;
+            }
+        .vertical-center {
+            min-height:100%;
+            max-height:100vh;
+            display:flex;
+            }
+        .jumbotron{
+            background-color: #E1EEDD;
+            }
+        .nav-link{
+            color: #183A1D;
+            text-decoration: none;
+            }
+        .head {
+            margin-left:10px;
+            margin-top:30px;
+            display:inline-block;
+            color: #F6C453;
+            font-family: "Dosis", sans-serif;
+            }
+        .account {
+            padding-top:40px;
+            }
+        .navbar {
+            margin-top:-60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .breadcrumb {
+            background-color: #FEFBE9;
+            }
+        .breadcrumb >.active {
+            color: #183A1D;
+            }
+        .head2 {
+            margin-top:10px;
+            color: #183A1D;
+            font-family: "Dosis", sans-serif;
+            }
+        p {
+            color: #183A1D;
+            }
+        .descr {
+            margin-left:30px;
+            margin-right:30px;
+            }
+        .col {
+            margin:20px;
+            }
+        .creator {
+            margin-left:10px;
+            display:inline-block;
+            }
+        .footer {
+            background-color: #E1EEDD;;
+            background-size:100%;
+            color: #183A1D;
+            }
+        .btn-default{
+            background-color: #183A1D;
+            border-color: #183A1D;
+            color: #FEFBE9;
+            }
+        .btn-default:hover{
+            background-color: #183A1D;
+            border-color: #F0a04b;
+            border-width: 2px;
+            color: #FEFBE9;
+            }
+        .btn-primary{
+            background-color: #183A1D;
+            border-color: #183A1D;
+            color: #FEFBE9;
+            margin-left:30%;
+            margin-top: 5px
+            }
+        .btn-primary:hover{
+            background-color: #183A1D;
+            border-color: #F0a04b;
+            border-width: 2px;
+            color: #FEFBE9;
+            }
+        .btn-success{
+            background-color: #183A1D;
+            border-color: #183A1D;
+            color: #FEFBE9;
+            margin-left:2%;
+            }
+        .btn-success:hover{
+            background-color: #183A1D;
+            border-color: #F0a04b;
+            border-width: 2px;
+            color: #FEFBE9;
+            }
+        .task {
+            margin-left:7%;
+            margin-right:2%;
+            margin-bottom: 2%;
+            color: #183A1D;
+            }
+        .task2{
+            margin-top:30px;
+            margin-bottom:30px;
+            }
+    </style>
+</head>
+
+<body>
+
+<div class="jumbotron vertical-center" >
+    <div class="container">
+
+        <img src="Media/placeholder.jpg" width="20%" class="img rounded img-fluid float-left" alt="Dig Log Learner Logo">
+        <h1 class="head">Digital Logic Learning</h1>
+
+        <ul class="account nav float-right">
+            <form class="form-inline">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="LogIn.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Account.html"><img src="Media/squareplaceholder.jpg" width="45px" height="45px" class="rounded-circle"></a>
+                </li></form>
+        </ul>
+    </div>
+</div>
+
+<div class="navbar">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="Home.html" style="border-bottom-color: #F6C453">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Learning.html" style="border-bottom-color: #F6C453">Learning</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="CircuitsChallenges.html" style="border-bottom-color: #F6C453">Circuits Challenges</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="CircuitsFreeStyle.html" style="background-color: #FEFBE9; border-bottom-color: #FEFBE9; border-top-color: #F6C453;
+                border-right-color: #F6C453; border-left-color: #F6C453;"> Circuits FreeStyle</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="EquationsChallenges.html" style="border-bottom-color: #F6C453"> Equation Challenges</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Home.html" style="color: #183A1D">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Circuits FreeStyle</li>
+        </ol>
+    </nav>
+
+    <h2 class="head2">Digital Circuits FreeStyle</h2>
+
+    <h5 class="task"><b>Build a logic circuit in the field below and generate its equation!</b></h5>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="btn-group-vertical">
+                <div class="btn btn-group dropleft">
+                    <a class="btn dropdown-toggle btn-default rounded" data-toggle="dropdown" href="#">
+                        Circuit Inputs
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><p><form class="form-inline border">Switch<canvas draggable="true" ondragstart="dragStart(event)" id="switch" width="50" height="40"></canvas></form></a></li>
+                        <li><p><form class="form-inline border">Clock<canvas draggable="true" ondragstart="dragStart(event)" id="clock" width="50" height="40"></canvas></form></a></li>
+                        <li><p><form class="form-inline border">High Constant<canvas draggable="true" ondragstart="dragStart(event)" id="highIn" width="50" height="45"></canvas></form></a></li>
+                        <li><p><form class="form-inline border">Low Constant<canvas draggable="true" ondragstart="dragStart(event)" id="lowIn" width="50" height="45"></canvas></form></a></li>
+                    </ul>
+                </div>
+                <div class="btn btn-group dropleft">
+                    <a class="btn dropdown-toggle btn-default rounded" data-toggle="dropdown" href="#">
+                        Circuit Output Devices
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><p><form class="form-inline">Lightbulb<canvas draggable="true" ondragstart="dragStart(event)" id="bulb" width="30" height="60"></canvas></form></p></li>
+                    </ul>
+                </div>
+                <div class="btn btn-group dropright">
+                    <a class="btn dropdown-toggle btn-default rounded" data-toggle="dropdown" href="#">
+                        Logic Gates
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="items"><p><form class="form-inline border">Buffer<canvas draggable="true" ondragstart="dragStart(event)" id="buffer" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">NOT Gate<canvas draggable="true" ondragstart="dragStart(event)" ondrop ="dragDrop(event)" ondragover ="allowDrop(event)" id="NOTgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">AND Gate<canvas draggable="true" ondragstart="dragStart(event)" ondrop ="dragDrop(event)" ondragover ="allowDrop(event)" id="ANDgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">OR Gate<canvas draggable="true" ondragstart="dragStart(event)" id="ORgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">NOR Gate<canvas draggable="true" ondragstart="dragStart(event)" id="NORgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">NAND Gate<canvas draggable="true" ondragstart="dragStart(event)" id="NANDgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">XOR Gate<canvas draggable="true" ondragstart="dragStart(event)" id="XORgate" width="100" height="40"></canvas></form></p></li>
+                        <li><p><form class="form-inline border">XNOR Gate<canvas draggable="true" ondragstart="dragStart(event)" id="XNORgate" width="100" height="40"></canvas></form></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9 border" ondrop ="dragDrop(event)" ondragover ="allowDrop(event)"></div>
+
+    </div>
+    <button class="btn btn-primary" type="button">Generate Equation</button>
+    <form class="form-inline task2">
+        <h5 class="task"><b>Or write an equation and generate its circuit!</b></h5>
+        <input type="text" class="form-control" style="width: 20%">
+        <button class="btn btn-success">Generate Circuit</button>
+    </form>
+</div>
+
+<script>
+
+function allowDrop (ev) {
+ev.preventDefault();
+}
+function dragStart (ev) {
+ev.dataTransfer.setData ("text",  ev.target.id);
+}
+function dragDrop (ev) {
+ev.preventDefault ();
+var data =  ev.dataTransfer.getData ("text");
+ev.target.appendChild (document.getElementById(data));
+}
+
+
+</script>
+
+<script>
+var c = document.getElementById("clock");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(40,0);
+ctx.lineTo(40,40);
+ctx.lineTo(0,40);
+ctx.lineTo(0,0);
+ctx.moveTo(40,20);
+ctx.lineTo(50,20);
+ctx.moveTo(5,15);
+ctx.lineTo(5,25);
+ctx.lineTo(20,25);
+ctx.lineTo(20,15);
+ctx.lineTo(35,15);
+ctx.lineTo(35,25);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("switch");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(5,25);
+ctx.lineTo(35,25);
+ctx.lineTo(35,10);
+ctx.lineTo(5,10);
+ctx.lineTo(5,25);
+ctx.moveTo(18,10);
+ctx.lineTo(8,2);
+ctx.moveTo(35,18);
+ctx.lineTo(50,18);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("lowIn");
+var ctx = c.getContext("2d");
+
+ctx.font = "30px Arial";
+ctx.fillText("0",10,30);
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(40,0);
+ctx.lineTo(40,40);
+ctx.lineTo(0,40);
+ctx.lineTo(0,0);
+ctx.moveTo(40,20);
+ctx.lineTo(50,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("highIn");
+var ctx = c.getContext("2d");
+
+ctx.font = "30px Arial";
+ctx.fillText("1",10,30);
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(40,0);
+ctx.lineTo(40,40);
+ctx.lineTo(0,40);
+ctx.lineTo(0,0);
+ctx.moveTo(40,20);
+ctx.lineTo(50,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("buffer");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,20);
+ctx.lineTo(30,20);
+ctx.moveTo(30,0);
+ctx.lineTo(30,40);
+ctx.lineTo(70,20);
+ctx.lineTo(30,0);
+ctx.moveTo(70,20);
+ctx.lineTo(100,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("NOTgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(30,0);
+ctx.lineTo(30,40);
+ctx.lineTo(70,20);
+ctx.lineTo(30,0);
+ctx.moveTo(80,20);
+ctx.lineTo(100,20);
+ctx.moveTo(80,20);
+ctx.arc(75, 20, 5, 0, Math.PI * 2);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("ANDgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(30,0);
+ctx.lineTo(30,40);
+ctx.bezierCurveTo(90,40,90,0,30,0);
+ctx.moveTo(75,20);
+ctx.lineTo(100,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("NANDgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(30,0);
+ctx.lineTo(30,40);
+ctx.bezierCurveTo(90,40,90,0,30,0);
+ctx.moveTo(85,20);
+ctx.lineTo(100,20);
+ctx.moveTo(85,20);
+ctx.arc(80,20,5,0,Math.PI*2);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("ORgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(20,0);
+ctx.quadraticCurveTo(42,20,20,40);
+ctx.quadraticCurveTo(60,40,70,20);
+ctx.quadraticCurveTo(60,0,20,0);
+ctx.moveTo(70,20);
+ctx.lineTo(100,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("NORgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(20,0);
+ctx.quadraticCurveTo(42,20,20,40);
+ctx.quadraticCurveTo(60,40,70,20);
+ctx.quadraticCurveTo(60,0,20,0);
+ctx.moveTo(80,20);
+ctx.arc(75, 20, 5, 0, Math.PI * 2);
+ctx.moveTo(80,20);
+ctx.lineTo(100,20);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("XNORgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(20,0);
+ctx.quadraticCurveTo(42,20,20,40);
+ctx.quadraticCurveTo(60,40,70,20);
+ctx.quadraticCurveTo(60,0,20,0);
+ctx.moveTo(80,20);
+ctx.arc(75, 20, 5, 0, Math.PI * 2);
+ctx.moveTo(80,20);
+ctx.lineTo(100,20);
+ctx.moveTo(15,0);
+ctx.quadraticCurveTo(37,20,15,40);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("XORgate");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,10);
+ctx.lineTo(30,10);
+ctx.moveTo(0,30);
+ctx.lineTo(30,30);
+ctx.moveTo(20,0);
+ctx.quadraticCurveTo(42,20,20,40);
+ctx.quadraticCurveTo(60,40,70,20);
+ctx.quadraticCurveTo(60,0,20,0);
+ctx.moveTo(70,20);
+ctx.lineTo(100,20);
+ctx.moveTo(15,0);
+ctx.quadraticCurveTo(37,20,15,40);
+ctx.stroke();
+</script>
+
+<script>
+var c = document.getElementById("bulb");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(10,50);
+ctx.lineTo(20,50);
+ctx.lineTo(20,30);
+ctx.lineTo(10,30);
+ctx.lineTo(10,50);
+ctx.moveTo(10,35);
+ctx.lineTo(20,35);
+ctx.moveTo(10,40);
+ctx.lineTo(20,40);
+ctx.moveTo(10,45);
+ctx.lineTo(20,45);
+ctx.moveTo(20,30);
+ctx.quadraticCurveTo(20,20,25,20);
+ctx.moveTo(10,30);
+ctx.quadraticCurveTo(10,20,5,20);
+ctx.moveTo(25,20);
+ctx.arc(15,15,10,0,Math.PI*0.75,true);
+ctx.moveTo(0,40);
+ctx.lineTo(10,40);
+ctx.stroke();
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="creator col">
+                <form class="form-inline">
+                    <img src="Media/squareplaceholder.jpg" width="30px" height="30px" class="rounded-circle float-left">
+                    <h6 class="creator"><u>Creator</u></h6>
+                    <ul>
+                        <li>Jane Smith</li>
+                        <li>Master of the Universe</li>
+                        <li>From Mars</li>
+                        <li>Knows what you did last summer</li>
+                    </ul>
+                </form>
+            </div>
+            <div class="contact col">
+                <h6><u>Contact</u></h6>
+                <ul>
+                    <li>Jane Smith</li>
+                    <li>janesmith@example.com</li>
+                    <li>Tel. 123456789</li>
+                    <li>42 Universe Street, City of Everything</li>
+                </ul>
+            </div>
+            <div class="help col">
+                <a data-toggle="modal" data-target="#myModal"><h6><u>Help</u></h6></a>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Help</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This link will lead to a help page, with advice, troubleshooting and FAQs.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
